@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>reveal.js - The HTML Presentation Framework</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="libs/reveal-js/css/reveal.css">
+    <link rel="stylesheet" href="libs/reveal-js/css/theme/default.css" id="theme">
+
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/animate.css/animate.css">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="libs/reveal-js/lib/css/zenburn.css">
+
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section data-state="housewife">
+          <h1><span class="golden">ES6</span> is awesome</h1>
+          <h4>JavaScript für den modernen Programmierer von heute</h4>
+        </section>
+
+        <section data-state="whoami" data-transition="fade">
+          <h2>&gt; whoami<span class="animated-when-visible flash animated-infinite">_</span></h2>
+          <!-- <div class="text-left"> -->
+            <img src="assets/images/krnl-ambigram.svg" alt="krnl.de logo" width="200" heigh="200" class="animated-when-visible rollIn animated-delay-1000"/>
+            <p>Kai Dorschner</p>
+            <p>Freelancer &amp; Frontend Developer</p>
+            <p><a href="http://krnl.de">http://krnl.de</a></p>
+          <!-- </div> -->
+        </section>
+
+        <section>
+          <h2>ES6 ===
+          <select>
+            <option value="">ECMAScript 6</option>
+            <option value="">ECMAScript 2015</option>
+            <option value="">ECMAScript Harmony</option>
+            <option value="">ECMA-262 Edition 6</option>
+            <option value="">ES6 Harmony</option>
+            <option value="">ES.next</option>
+            <option value="">JavaScript 2.0</option>
+          </select>
+          </h2>
+          <dl class="fragment dl-horizontal">
+            <dt>July 12, 2011</dt>
+            <dd>First working draft</dd>
+          </dl>
+          <dl class="fragment dl-horizontal">
+            <dt>August, 2014</dt>
+            <dd>Feature Freeze</dd>
+          </dl>
+
+          <dl class="fragment dl-horizontal">
+            <dt>June 17, 2015</dt>
+            <dd>ECMA-262 Edition 6 standard</dd>
+          </dl>
+          <!--   got officially approved and as a standard on  by the ECMA General Assembly. It will also appear as the international industry standard ISO/IEC 16262:2016.</p> -->
+        </section>
+
+        <section>
+          <h2>The Fuss <span class="small">and what it is about</span></h2>
+          <ul>
+            <li class="fragment">Block scoping <code>let x = 1;</code></li>
+            <li class="fragment">Arrow Functions <code>[1, 2, 3].map(x => x * x)</code></li>
+            <li class="fragment">Modules <code>import fs from 'fs';</code></li>
+            <li class="fragment">Classes <code>class HomoSapiens extends HomoErectus {}</code></li>
+            <li class="fragment">Default Parameters <code>function point(x = 0, y = 0) {}</code></li>
+            <li class="fragment">Rest Parameters <code>function concat(one, two, ...rest) {}</code></li>
+            <li class="fragment">Spread Operator <code>new Date(...dateFields)</code></li>
+            <li class="fragment">Destructuring <code>[a, b] = [b, a]</code></li>
+            <li class="fragment">Generators <code>function* generator() { yield 1; }</code></li>
+            <li class="fragment">and <a href="https://leanpub.com/understandinges6/read/">soooo much more</a> ...</li>
+          </ul>
+        </section>
+
+        <section data-background="assets/images/whoa.gif"></section>
+
+        <section data-background="assets/images/calm-yourself.jpg" data-background-size="contain"></section>
+
+        <section>
+          <h2><img src="assets/images/under-construction.gif"> Work in progress <img src="assets/images/under-construction.gif"></h2>
+          <img src="assets/images/compatibility.png" alt="">
+          <a href="https://kangax.github.io/compat-table/es6/" class="pull-right">https://kangax.github.io/compat-table/es6/</a>
+        </section>
+
+        <section>
+          <h1>Fear not</h1>
+          <h3>Transpilers to the rescue</h3>
+          <ul class="list-unstyled">
+            <li><a href="https://babeljs.io/">Babel</a> (f.k.a. 6to5)</li>
+            <li><a href="https://github.com/google/traceur-compiler">Traceur</a></li>
+            <li><a href="https://github.com/Microsoft/TypeScript/wiki/Roadmap">Typescript 1.4+</a></li>
+          </ul>
+        </section>
+
+        <section data-state="lazy" data-transition="fade">
+          <h1><span class="golden">Babel</span> it is</h1>
+        </section>
+
+        <section data-transition="fade">
+          <p>&gt; npm install -g babel<span class="animated-when-visible flash animated-infinite">_</span></p>
+        </section>
+
+        <section data-transition="fade">
+          <p>&gt; node whatever.js<span class="animated-when-visible flash animated-infinite">_</span></p>
+        </section>
+
+        <section data-transition="fade">
+          <p>&gt; <span class="golden">babel-</span>node whatever.js<span class="animated-when-visible flash animated-infinite">_</span></p>
+        </section>
+
+        <section data-transition="fade">
+          <p>&gt; <span class="golden">babel</span> whatever.js > dist/whatever.js<span class="animated-when-visible flash animated-infinite">_</span></p>
+        </section>
+
+        <section data-transition="fade">
+          <p>&gt; <span class="golden">babel</span> whatever.js --watch --out-file whatever-compiled.js<span class="animated-when-visible flash animated-infinite">_</span></p>
+        </section>
+
+        <section data-transition="fade">
+          <p>&gt; <span class="golden">babel</span> src/ --out-dir dist/<span class="animated-when-visible flash animated-infinite">_</span></p>
+        </section>
+
+        <section data-transition="fade">
+          <h2>Microoptimization</h2>
+          <p>through <span class="golden">io.js</span> and <span class="golden">.babelrc</span></p>
+          <p class="fragment">&gt; babel-node --harmony_arrow_functions --harmony_classes --harmony_object_literals --harmony_rest_parameters --harmony_scoping --harmony_templates whatever.js</p>
+        </section>
+
+        <section>
+          <h2>Transpiler Limitations</h2>
+          <blockquote class="fragment">
+            <p>Due to the limitations of ES5, Proxies cannot be transpiled or polyfilled. See support from various JavaScript engines.</p>
+            <small><a href="https://babeljs.io/docs/learn-es2015/#proxies">Learn ES2015 # Proxies</a></small>
+          </blockquote>
+          <blockquote class="fragment">
+            <p>... Date, Array and Error cannot be [subclassed] due to ES5 engine limitations.</p>
+            <small><a href="https://babeljs.io/docs/learn-es2015/#subclassable-built-ins">Learn ES2015 # Subclassable Built-ins</a></small>
+          </blockquote>
+        </section>
+
+        <section data-background="#000" data-transition="fade">
+          <h1>Recommendations</h1>
+          <ul>
+            <li><a href="https://leanpub.com/exploring-es6/read">Exploring ES6</a> (Axel Rauschmayer)</li>
+            <li><a href="http://www.2ality.com/">2ality.com</a> (Axel Rauschmayer)</li>
+            <li><a href="https://leanpub.com/understandinges6/read/">Understanding ECMAScript 6</a> (Nicholas C. Zakas)</li>
+          </ul>
+        </section>
+        <section data-background="#000" data-transition="fade">
+          <h1>The end</h1>
+          <img src="assets/images/the-internet.jpg" alt="">
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/reveal-js/lib/js/head.min.js"></script>
+    <script src="libs/reveal-js/js/reveal.js"></script>
+
+    <script>
+      'use strict';
+      /*eslint-env browser, jquery */
+      /* globals Reveal */
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        // transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'libs/reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'libs/reveal-js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'libs/reveal-js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'libs/reveal-js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'libs/reveal-js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'libs/reveal-js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+      function animateSlide(event) {
+        $('.animated-when-visible', event.currentSlide).each(function () {
+          var $this = $(this);
+          var classes = $this.attr("class");
+          $this.removeClass();
+          window.setTimeout(function () {
+            $this.addClass('animated').addClass(classes);
+          }, 0);
+        });
+        $(event.previousSlide).add(event.nextSlide).removeClass('animated');
+      }
+
+      Reveal.addEventListener('ready', animateSlide, false);
+      Reveal.addEventListener('slidechanged', animateSlide, false);
+
+    </script>
+
+  </body>
+</html>

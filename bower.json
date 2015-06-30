@@ -1,0 +1,22 @@
+{
+  "name": "es6-presentation",
+  "version": "0.0.0",
+  "authors": [
+    "Kai Dorschner <me@krnl.de>"
+  ],
+  "license": "MIT",
+  "homepage": "http://krnl.de/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reveal-js": "~2.6.2",
+    "bootstrap": "~3.3.5",
+    "animate.css": "~3.3.0",
+    "jquery": "~2.1.4"
+  }
+}

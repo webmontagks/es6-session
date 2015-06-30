@@ -1,0 +1,70 @@
+.housewife body {
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%),
+              url(../images/o-1950S-HOUSEWIFE-facebook.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.whoami body {
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%),
+              url(../images/2014-retro-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.lazy body {
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%),
+              url(../images/lazy-student.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.animated-speed-500 {
+  animation-duration: .5s;
+}
+
+.animated-speed-3000 {
+  animation-duration: 3s;
+}
+
+.animated-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animated-infinite {
+  animation-iteration-count: infinite!important;
+}
+
+.golden {
+  color: #ffd700;
+  text-shadow: 0 0 15px rgba(255, 215, 0, .5);
+}
+
+select {
+  color: #333;
+}
+
+.dl-horizontal {
+  text-align: left;
+}
+
+.dl-horizontal dt {
+  width: 400px
+}
+.dl-horizontal dd {
+  margin-left: 420px;
+}
+
+.reveal section img {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
+
+.reveal code {
+  margin: 0 10px;
+  padding: 2px 4px;
+  font-size: 90%;
+}
